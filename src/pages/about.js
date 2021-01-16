@@ -10,10 +10,6 @@ function About() {
             paddingBottom: "20px",
         },
 
-        h2: {
-            paddingBottom: "10px",
-            paddingTop: "20px",
-        },
         
         container: {
             background: "linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0,0,0,0.9))",
