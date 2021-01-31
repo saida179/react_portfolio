@@ -1,13 +1,12 @@
 //import { Link } from "react-router-dom";
 //import "bootswatch/dist/Cerulean/bootstrap.min.css";
 
+
+
 function About() {
 
     const styles = {
-        img: {
-            marginBottom: "70px",
-            paddingBottom: "20px",
-        },
+
 
         h2: {
             paddingBottom: "10px",
@@ -30,13 +29,14 @@ function About() {
                 </div>
                 <div className="row">
                     <div className="col-sm-12 col-md-6">
-                        <img src={process.env.PUBLIC_URL + "/assets/copyDa.jpg"} className="img-fluid rounded-circle" style={styles.img}
-                            alt="..." />
+                        <img className="img-fluid"
+                            src={`${process.env.PUBLIC_URL}/assets/copyDa.jpg`}
+                            alt="logo" />
                     </div>
 
                     <div className="col-sm-12 col-md-6 text-white">
                         <p>
-                            I am a Full-Stack developer certified through the University of Arizona Coding Bootcamp. 
+                            I am a Full-Stack developer certified through the University of Arizona Coding Bootcamp.
                         </p>
                     </div>
                 </div>
