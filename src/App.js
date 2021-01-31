@@ -1,27 +1,28 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootswatch/dist/slate/bootstrap.min.css'; // Added this :boom:
 import './App.css';
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import Nav from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+//import Wrapper from "./components/Wrapper/index"
 
 function App() {
   return (
-    <>
-        <Router>
-
-          <Nav />
-          <Wrapper>
-            <Route exact path="/" component={About} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/portfolio" component={Portfolio} />
-            <Route path="/contact" component={Contact} />
-          </Wrapper>
-          <Footer />
-
-        </Router>
-    </>
+      <Router>
+          <div>
+              <Navbar />
+                  <Switch>
+                      <Route exact path="/" component={About} />
+                      <Route path="/About" component={About} />
+                      <Route path="/Portfolio" component={Portfolio} />
+                      <Route path="/Contact" component={Contact} />
+                      <Route component={About} />
+                  </Switch>
+              <Footer />
+          </div>
+      </Router>
   );
 }
 
