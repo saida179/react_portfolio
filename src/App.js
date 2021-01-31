@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 //import Wrapper from "./components/Wrapper/index"
 
+
 function App() {
   return (
       <Router>
